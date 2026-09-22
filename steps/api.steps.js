@@ -5,7 +5,7 @@ const { When, Then, setDefaultTimeout } = require('@cucumber/cucumber');
 const assert = require('assert');
 
 setDefaultTimeout(15 * 1000);
-const BASE_URL = ({}).BASE_URL || 'http://localhost:5179';
+const BASE_URL = ({}).BASE_URL || 'http://host.docker.internal:5179';
 
 When('I send a {word} request to {string} with body:', async function (method, path, body) {
   const res = await fetch(BASE_URL + path, {
