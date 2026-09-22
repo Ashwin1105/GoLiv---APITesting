@@ -1,0 +1,10 @@
+{
+  "name": "qa-automation-api-bdd",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^13.2.1"
+  }
+}
